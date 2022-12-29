@@ -1,0 +1,44 @@
+{
+  "name": "react-usecollapsible",
+  "version": "0.1.0",
+  "description": "React hook for easily creating accessible collapsed content.",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tywayne/react-usecollapsible"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "accessible",
+    "collapsed",
+    "collapsible",
+    "useCollapsible"
+  ],
+  "author": "Ty Carlson <tywayne@fastmail.com> (https://tywayne.com)",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8 || ^17 || ^18",
+    "react-dom": "^16.8 || ^17 || ^18"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-typescript": "^10.0.1",
+    "husky": "^8.0.2",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
+    "lint-staged": "^13.1.0",
+    "rollup": "^2.79.1",
+    "rollup-plugin-dts": "^4.2.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
