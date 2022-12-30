@@ -1,4 +1,4 @@
-name: test
+name: Test Runner
 on: [push]
 jobs:
   jest:
