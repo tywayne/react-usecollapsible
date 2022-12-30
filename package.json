@@ -1,6 +1,6 @@
 {
 	"name": "react-usecollapsible",
-	"version": "0.2.1",
+	"version": "0.3.0",
 	"description": "React hook for easily creating accessible collapsed content.",
 	"type": "module",
 	"module": "dist/index.js",
