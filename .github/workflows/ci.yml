@@ -1,5 +1,14 @@
-name: Test Runner
-on: [push]
+name: CI
+
+on:
+  push:
+    branches: '**'
+  pull_request:
+    branches: '**'
+
+permissions:
+  contents: read
+
 jobs:
   jest:
     runs-on: ubuntu-latest
@@ -8,5 +17,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - run: npm ci
+          cache: npm
+      - run: npm install
       - run: npm test
