@@ -1,4 +1,4 @@
-name: Jest tests
+name: test
 on: [push]
 
 jobs:
