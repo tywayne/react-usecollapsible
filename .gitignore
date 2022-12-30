@@ -11,3 +11,5 @@ test-report.xml
 .vscode/*
 .idea
 .DS_Store
+
+*.tgz
