@@ -36,7 +36,7 @@ describe('useCollapsible', () => {
 			'aria-controls': id,
 			'aria-expanded': true,
 			role: 'button',
-			type: 'buttons',
+			type: 'button',
 		});
 	});
 });
