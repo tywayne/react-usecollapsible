@@ -8,6 +8,7 @@ export interface TriggerProps {
 	'aria-expanded': boolean;
 	type: ButtonHTMLAttributes<HTMLButtonElement>['type'];
 	role: ButtonHTMLAttributes<HTMLButtonElement>['role'];
+	tabIndex: number;
 }
 
 export interface ContentProps {
