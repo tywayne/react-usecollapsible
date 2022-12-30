@@ -90,12 +90,12 @@ const Collapsible = () => {
 
 ## Hook Response
 
-| Property       | Type                                            | Description                              |
-| -------------- | ----------------------------------------------- | ---------------------------------------- |
-| `expanded`     | `boolean`                                       | Initial state of the collapsible content |
-| `setExpanded`  | `React.Dispatch<React.SetStateAction<boolean>>` | Initial state of the collapsible content |
-| `triggerProps` | `TriggerProps`                                  | Initial state of the collapsible content |
-| `contentProps` | `ContentProps`                                  | Initial state of the collapsible content |
+| Property       | Type                                            | Description                                       |
+| -------------- | ----------------------------------------------- | ------------------------------------------------- |
+| `expanded`     | `boolean`                                       | `useState` value for expansion of content         |
+| `setExpanded`  | `React.Dispatch<React.SetStateAction<boolean>>` | `useState` setter for expansion of content        |
+| `triggerProps` | `TriggerProps`                                  | Props to be applied to content visibility trigger |
+| `contentProps` | `ContentProps`                                  | Props to be applied to content area               |
 
 # FAQ
 
