@@ -3,6 +3,12 @@ import { act, renderHook } from '@testing-library/react';
 import { useCollapsible } from '.';
 
 describe('useCollapsible', () => {
+	const baseTriggerProps = {
+		role: 'button',
+		type: 'button',
+		tabIndex: 0,
+	};
+
 	it('should return default props', () => {
 		const id = ':r0:';
 		const { result } = renderHook(() => useCollapsible());
@@ -16,8 +22,7 @@ describe('useCollapsible', () => {
 		expect(result.current.triggerProps).toEqual({
 			'aria-controls': id,
 			'aria-expanded': false,
-			role: 'button',
-			type: 'button',
+			...baseTriggerProps,
 		});
 	});
 
@@ -35,8 +40,7 @@ describe('useCollapsible', () => {
 		expect(result.current.triggerProps).toEqual({
 			'aria-controls': id,
 			'aria-expanded': true,
-			role: 'button',
-			type: 'button',
+			...baseTriggerProps,
 		});
 	});
 });
