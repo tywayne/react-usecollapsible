@@ -1,8 +1,7 @@
-name: Tests
-on: [push]
 uses: vebr/jest-lcov-reporter@v0.2.0
 with:
   update-comment: true
-  name: Test Coverage
+  name: Tests
+  on: [push]
   github-token: ${{ secrets.GITHUB_TOKEN }}
   lcov-file: ./coverage/lcov.info
