@@ -31,7 +31,7 @@ const Collapsible = () => {
 
   return (
     <>
-      <div {...triggerProps}>Toggle</div>
+      <button {...triggerProps}>Toggle</button>
       <div {...contentProps}>Collapsible content</div>
     </>
   );
@@ -50,7 +50,7 @@ const Collapsible = () => {
 
   return (
     <>
-      <div {...triggerProps}>Toggle</div>
+      <button {...triggerProps}>Toggle</button>
       <div {...contentProps}>Collapsible content</div>
     </>
   );
@@ -63,15 +63,13 @@ const Collapsible = () => {
 import { useCollapsible } from 'react-usecollapsible';
 
 const Collapsible = () => {
-  const { expanded, setExpanded, triggerProps, contentProps } = useCollapsible({
-    defaultExpanded: true,
-  });
+  const { expanded, setExpanded, triggerProps, contentProps } = useCollapsible();
 
   return (
     <>
-      <div {...triggerProps} onClick={() => setExpanded((e) => !e)}>
+      <button {...triggerProps} onClick={() => setExpanded((e) => !e)}>
         {expanded ? 'Hide' : 'Show'}
-      </div>
+      </button>
       <div {...contentProps} style={{ display: expanded ? 'block' : 'none' }}>
         Collapsible content
       </div>
