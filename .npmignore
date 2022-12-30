@@ -8,3 +8,4 @@ jest*
 .prettierrc
 *.tgz
 .github
+.vscode
