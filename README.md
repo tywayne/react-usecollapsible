@@ -80,13 +80,34 @@ const Collapsible = () => {
 };
 ```
 
+## Custom ID attribute
+
+```tsx
+import { useCollapsible } from 'react-usecollapsible';
+
+const Collapsible = () => {
+  const { expanded, setExpanded, triggerProps, contentProps } = useCollapsible({
+    id: 'my_custom_id',
+  });
+  // contentProps.id and triggerProps['aria-controls'] will be 'my_custom_id'
+
+  return (
+    <>
+      <button {...triggerProps}>Toggle</button>
+      <div {...contentProps}>Collapsible content</div>
+    </>
+  );
+};
+```
+
 # API
 
 ## Hook Arguments
 
-| Property          | Type      | Default | Description                              |
-| ----------------- | --------- | ------- | ---------------------------------------- |
-| `defaultExpanded` | `boolean` | `false` | Initial state of the collapsible content |
+| Property          | Type      | Default                 | Description                                     |
+| ----------------- | --------- | ----------------------- | ----------------------------------------------- |
+| `defaultExpanded` | `boolean` | `false`                 | Initial state of the collapsible content        |
+| `id`              | `string`  | `useId() hook response` | Unique ID for connecting the trigger to content |
 
 ## Hook Response
 
