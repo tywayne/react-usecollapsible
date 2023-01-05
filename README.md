@@ -21,6 +21,8 @@ npm i react-usecollapsible
 
 # Usage
 
+Try it out on [CodeSandbox](https://codesandbox.io/s/react-usecollapsible-example-8hp1o7)
+
 ## Basic Usage
 
 ```tsx
