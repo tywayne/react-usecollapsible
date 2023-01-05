@@ -104,19 +104,19 @@ const Collapsible = () => {
 
 ## Hook Arguments
 
-| Property          | Type      | Default                 | Description                                     |
-| ----------------- | --------- | ----------------------- | ----------------------------------------------- |
-| `defaultExpanded` | `boolean` | `false`                 | Initial state of the collapsible content        |
-| `id`              | `string`  | `useId() hook response` | Unique ID for connecting the trigger to content |
+| Property        | Type    | Default                 | Description                                     |
+| --------------- | ------- | ----------------------- | ----------------------------------------------- |
+| defaultExpanded | boolean | false                   | Initial state of the collapsible content        |
+| id              | string  | `useId()` hook response | Unique ID for connecting the trigger to content |
 
 ## Hook Response
 
-| Property       | Type                                            | Description                                       |
-| -------------- | ----------------------------------------------- | ------------------------------------------------- |
-| `expanded`     | `boolean`                                       | `useState` value for expansion of content         |
-| `setExpanded`  | `React.Dispatch<React.SetStateAction<boolean>>` | `useState` setter for expansion of content        |
-| `triggerProps` | `TriggerProps`                                  | Props to be applied to content visibility trigger |
-| `contentProps` | `ContentProps`                                  | Props to be applied to content area               |
+| Property     | Type                                          | Description                                       |
+| ------------ | --------------------------------------------- | ------------------------------------------------- |
+| expanded     | boolean                                       | `useState` value for expansion of content         |
+| setExpanded  | React.Dispatch<React.SetStateAction<boolean>> | `useState` setter for expansion of content        |
+| triggerProps | TriggerProps                                  | Props to be applied to content visibility trigger |
+| contentProps | ContentProps                                  | Props to be applied to content area               |
 
 # FAQ
 
