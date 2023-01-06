@@ -2,6 +2,7 @@ import { useState, useMemo, useId, ButtonHTMLAttributes } from 'react';
 
 export interface UseCollapsibleOptions {
 	defaultExpanded: boolean;
+	id: string;
 }
 export interface TriggerProps {
 	'aria-controls': string;
@@ -19,7 +20,8 @@ export interface ContentProps {
 
 export const useCollapsible = (options?: Partial<UseCollapsibleOptions>) => {
 	const [expanded, setExpanded] = useState(options?.defaultExpanded ?? false);
-	const contentId = useId();
+	const uniqueId = useId();
+	const contentId = options?.id ?? uniqueId;
 
 	const triggerProps: TriggerProps = useMemo(() => {
 		return {

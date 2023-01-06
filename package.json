@@ -3,8 +3,8 @@
 	"version": "0.3.2",
 	"description": "React hook for easily creating accessible collapsed content.",
 	"type": "module",
-	"module": "dist/index.js",
-	"types": "dist/index.d.ts",
+	"exports": "./dist/index.js",
+	"types": "./dist/index.d.ts",
 	"scripts": {
 		"test": "jest",
 		"build": "rollup -c"
