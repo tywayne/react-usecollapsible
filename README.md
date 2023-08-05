@@ -2,7 +2,6 @@
 
 ![CI](https://github.com/tywayne/react-usecollapsible/actions/workflows/ci.yml/badge.svg?branch=main)
 ![NPM](https://img.shields.io/npm/v/react-usecollapsible)
-![Minzipped Size](https://img.shields.io/bundlephobia/minzip/react-usecollapsible)
 ![Peer Dependency, React](https://img.shields.io/npm/dependency-version/react-usecollapsible/peer/react)
 
 React hook for easily creating accessible collapsed content.
@@ -29,14 +28,14 @@ Try it out on [CodeSandbox](https://codesandbox.io/s/react-usecollapsible-exampl
 import { useCollapsible } from 'react-usecollapsible';
 
 const Collapsible = () => {
-  const { triggerProps, contentProps } = useCollapsible();
+	const { triggerProps, contentProps } = useCollapsible();
 
-  return (
-    <>
-      <button {...triggerProps}>Toggle</button>
-      <div {...contentProps}>Collapsible content</div>
-    </>
-  );
+	return (
+		<>
+			<button {...triggerProps}>Toggle</button>
+			<div {...contentProps}>Collapsible content</div>
+		</>
+	);
 };
 ```
 
@@ -46,16 +45,16 @@ const Collapsible = () => {
 import { useCollapsible } from 'react-usecollapsible';
 
 const Collapsible = () => {
-  const { triggerProps, contentProps } = useCollapsible({
-    defaultExpanded: true,
-  });
+	const { triggerProps, contentProps } = useCollapsible({
+		defaultExpanded: true,
+	});
 
-  return (
-    <>
-      <button {...triggerProps}>Toggle</button>
-      <div {...contentProps}>Collapsible content</div>
-    </>
-  );
+	return (
+		<>
+			<button {...triggerProps}>Toggle</button>
+			<div {...contentProps}>Collapsible content</div>
+		</>
+	);
 };
 ```
 
@@ -65,18 +64,18 @@ const Collapsible = () => {
 import { useCollapsible } from 'react-usecollapsible';
 
 const Collapsible = () => {
-  const { expanded, setExpanded, triggerProps, contentProps } = useCollapsible();
+	const { expanded, setExpanded, triggerProps, contentProps } = useCollapsible();
 
-  return (
-    <>
-      <button {...triggerProps} onClick={() => setExpanded((e) => !e)}>
-        {expanded ? 'Hide' : 'Show'}
-      </button>
-      <div {...contentProps} style={{ display: expanded ? 'block' : 'none' }}>
-        Collapsible content
-      </div>
-    </>
-  );
+	return (
+		<>
+			<button {...triggerProps} onClick={() => setExpanded((e) => !e)}>
+				{expanded ? 'Hide' : 'Show'}
+			</button>
+			<div {...contentProps} style={{ display: expanded ? 'block' : 'none' }}>
+				Collapsible content
+			</div>
+		</>
+	);
 };
 ```
 
@@ -86,17 +85,17 @@ const Collapsible = () => {
 import { useCollapsible } from 'react-usecollapsible';
 
 const Collapsible = () => {
-  const { expanded, setExpanded, triggerProps, contentProps } = useCollapsible({
-    id: 'my_custom_id',
-  });
-  // contentProps.id and triggerProps['aria-controls'] will be 'my_custom_id'
+	const { expanded, setExpanded, triggerProps, contentProps } = useCollapsible({
+		id: 'my_custom_id',
+	});
+	// contentProps.id and triggerProps['aria-controls'] will be 'my_custom_id'
 
-  return (
-    <>
-      <button {...triggerProps}>Toggle</button>
-      <div {...contentProps}>Collapsible content</div>
-    </>
-  );
+	return (
+		<>
+			<button {...triggerProps}>Toggle</button>
+			<div {...contentProps}>Collapsible content</div>
+		</>
+	);
 };
 ```
 
